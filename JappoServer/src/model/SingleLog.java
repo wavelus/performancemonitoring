@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.Date;
 
 @Entity(name="SINGLE_LOG")
 public class SingleLog implements Serializable {
@@ -14,12 +13,16 @@ public class SingleLog implements Serializable {
     private Long logId;
 
     private String labelOfTestedElement;
-    private Date timeOfExecution;
-    private Date timeOfResult;
+    private Long timeOfExecution;
+    private Long timeOfResult;
+    private String uniqueProgramExecutionId;
 
     public SingleLog(){}
 
-    public SingleLog(String label, Date timeOfExecution, Date timeOfResult){
+    public SingleLog(String label){
+        this.labelOfTestedElement = label;
+    }
+    public SingleLog(String label, Long timeOfExecution, Long timeOfResult){
         this.labelOfTestedElement = label;
         this.timeOfExecution = timeOfExecution;
         this.timeOfResult = timeOfResult;
@@ -30,6 +33,11 @@ public class SingleLog implements Serializable {
         return (labelOfTestedElement + " "+timeOfExecution+" "+timeOfResult);
     }
 
+    public String getUniqueProgramExecutionId() {return uniqueProgramExecutionId;    }
+
+    public void setUniqueProgramExecutionId(String uniqueProgramExecutionId) {
+        this.uniqueProgramExecutionId = uniqueProgramExecutionId;}
+
     public Long getLogId() {
         return logId;
     }
@@ -38,19 +46,19 @@ public class SingleLog implements Serializable {
         this.logId = logId;
     }
 
-    public Date getTimeOfExecution() {
+    public Long getTimeOfExecution() {
         return timeOfExecution;
     }
 
-    public void setTimeOfExecution(Date timeOfExecution) {
+    public void setTimeOfExecution(Long timeOfExecution) {
         this.timeOfExecution = timeOfExecution;
     }
 
-    public Date getTimeOfResult() {
+    public Long getTimeOfResult() {
         return timeOfResult;
     }
 
-    public void setTimeOfResult(Date timeOfResult) {
+    public void setTimeOfResult(Long timeOfResult) {
         this.timeOfResult = timeOfResult;
     }
 
@@ -61,7 +69,4 @@ public class SingleLog implements Serializable {
     public void setLabelOfTestedElement(String labelOfTestedElement) {
         this.labelOfTestedElement = labelOfTestedElement;
     }
-
-
-
 }
