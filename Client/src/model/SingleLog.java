@@ -10,7 +10,8 @@ import java.util.Date;
 @Entity(name="SINGLE_LOG")
 public class SingleLog implements Serializable {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long logId;
 
     private String labelOfTestedElement;
