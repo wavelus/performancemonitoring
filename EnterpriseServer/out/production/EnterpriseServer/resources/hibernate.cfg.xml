@@ -14,8 +14,11 @@
         <property name="dialect">org.hibernate.dialect.PostgreSQL92Dialect</property>
         <property name="cache.provider_class">org.hibernate.cache.internal.NoCachingRegionFactory</property>
 
+         <!--Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="model.SingleLog"/>
+        <mapping class="model.User"/>
+        <mapping class="model.UsersAddress"/>
+        <mapping class="model.Event"/>
     </session-factory>
 </hibernate-configuration>

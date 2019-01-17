@@ -34,7 +34,6 @@ public class JappoServerMain {
                 e.printStackTrace();
             }
         }
-
         System.out.println("Stopping Server");
         server.stop();
 

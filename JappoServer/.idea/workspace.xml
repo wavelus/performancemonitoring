@@ -7,13 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce214e46-6d1e-4674-9786-4d770ff5755f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Client/src/jappo/JappoBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/.idea/libraries/postgresql_42_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/src/model/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/src/model/UsersAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/src/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/client/JappoClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/client/JappoClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/jappo/Jappo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/jappo/Jappo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/model/SingleLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/model/SingleLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jappo/ExporterLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jappo/ExporterLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SingleLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SingleLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jappo/CollectorLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jappo/CollectorLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/JappoServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/JappoServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/JappoServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="170">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,15 +43,33 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jappo/CollectorLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="43" column="54" selection-start-line="42" selection-start-column="19" selection-end-line="43" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jappo/WorkerRunnable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/SingleLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="221">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jappo/ExporterLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+            <state relative-caret-position="306">
+              <caret line="28" column="130" selection-start-line="28" selection-start-column="102" selection-end-line="28" selection-end-column="130" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,19 +110,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/UserDetails.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/jappo/CollectorLog.java" />
         <option value="$PROJECT_DIR$/src/main/HibernateTest.java" />
-        <option value="$PROJECT_DIR$/src/main/JappoServerMain.java" />
         <option value="$PROJECT_DIR$/src/jappo/ExporterLog.java" />
         <option value="$PROJECT_DIR$/src/model/SingleLog.java" />
+        <option value="$PROJECT_DIR$/src/main/JappoServerMain.java" />
+        <option value="$PROJECT_DIR$/src/jappo/CollectorLog.java" />
+        <option value="$PROJECT_DIR$/src/resources/hibernate.cfg.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="745" />
+    <option name="x" value="-1855" />
+    <option name="y" value="-30" />
+    <option name="width" value="1729" />
+    <option name="height" value="944" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -105,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,10 +161,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JappoServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JappoServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -156,8 +188,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547243985656" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Client" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547569778990" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -243,12 +275,17 @@
       <workItem from="1547070009595" duration="2447000" />
       <workItem from="1547235589971" duration="173000" />
       <workItem from="1547235937889" duration="906000" />
-      <workItem from="1547241326583" duration="2616000" />
+      <workItem from="1547241326583" duration="2993000" />
+      <workItem from="1547506949379" duration="967000" />
+      <workItem from="1547549960058" duration="3894000" />
+      <workItem from="1547568213876" duration="1314000" />
+      <workItem from="1547646386540" duration="3006000" />
+      <workItem from="1547756019381" duration="278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32154000" />
+    <option name="totallyTimeSpent" value="41990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,10 +297,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-2567" y="-137" width="2062" height="1136" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.40015128" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2052947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -279,14 +316,14 @@
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.4924357" visible="true" weight="0.3494364" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.4924357" weight="0.34860557" />
       <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.4977307" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49924356" weight="0.32850242" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49546143" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.15434566" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -303,6 +340,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Hibernate_5_3_7_5_3_7.xml">
@@ -322,20 +363,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/UserDetails.java" />
-    <entry file="file://$PROJECT_DIR$/src/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jappo/CollectorLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -343,42 +370,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jappo/WorkerRunnable.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-5.3.7.Final.jar!/org/hibernate/boot/cfgxml/internal/ConfigLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="46" column="53" lean-forward="true" selection-start-line="45" selection-start-column="81" selection-end-line="46" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-5.3.7.Final.jar!/org/hibernate/boot/registry/StandardServiceRegistryBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="86" column="58" lean-forward="true" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/JappoServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="170">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jappo/CollectorLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="43" column="54" selection-start-line="42" selection-start-column="19" selection-end-line="43" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/SingleLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jappo/ExporterLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        <state relative-caret-position="306">
+          <caret line="28" column="130" selection-start-line="28" selection-start-column="102" selection-end-line="28" selection-end-column="130" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/SingleLog.java">
+    <entry file="file://$PROJECT_DIR$/src/jappo/WorkerRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="548">
+          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
         </state>
       </provider>
     </entry>

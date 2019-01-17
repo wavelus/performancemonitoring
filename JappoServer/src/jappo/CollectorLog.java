@@ -16,7 +16,7 @@ public class CollectorLog implements Runnable {
     protected boolean      isStopped    = false;
     protected Thread       runningThread= null;
     protected ExecutorService threadPool =
-            Executors.newFixedThreadPool(2);
+            Executors.newFixedThreadPool(10);
 
     public CollectorLog(int port){
         this.serverPort = port;
