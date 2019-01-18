@@ -13,6 +13,7 @@ import java.util.UUID;
 public class ExporterLog implements Runnable {
     ArrayList<SingleLog> logs;
     Session session = null;
+
     public ExporterLog(ArrayList<SingleLog> logs){
         this.logs = logs;
     }
@@ -26,14 +27,15 @@ public class ExporterLog implements Runnable {
     }
     @Override
     public void run() {
-        try (StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().configure("resources/hibernate.cfg.xml").build()) {
-            Metadata metadata = new MetadataSources(serviceRegistry).getMetadataBuilder().build();
-            SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
-            session = sessionFactory.openSession();
-            session.beginTransaction();
-            addToSession();
-            session.getTransaction().commit();
-            session.close();
+        try (
+                StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().configure("resources/hibernate.cfg.xml").build()) {
+                Metadata metadata = new MetadataSources(serviceRegistry).getMetadataBuilder().build();
+                SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
+                session = sessionFactory.openSession();
+                session.beginTransaction();
+                addToSession();
+                session.getTransaction().commit();
+                session.close();
 
         }catch (Exception e) {e.printStackTrace();}
     }

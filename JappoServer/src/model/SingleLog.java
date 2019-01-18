@@ -28,6 +28,14 @@ public class SingleLog implements Serializable {
         this.timeOfResult = timeOfResult;
     }
 
+    public SingleLog(String labelOfTestedElement, Long timeOfExecution, Long timeOfResult, String uniqueProgramExecutionId) {
+        this.labelOfTestedElement = labelOfTestedElement;
+        this.timeOfExecution = timeOfExecution;
+        this.timeOfResult = timeOfResult;
+        this.uniqueProgramExecutionId = uniqueProgramExecutionId;
+    }
+
+
     @Override
     public String toString() {
         return (labelOfTestedElement + " "+timeOfExecution+" "+timeOfResult);
