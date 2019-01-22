@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Set;
 
 public class Main {
-    public static void main(String [] args){
+    public static void main(String[] args) {
 
         User user1 = new User();
         User user2 = new User();
@@ -57,8 +57,8 @@ public class Main {
 //        session.getTransaction().commit();
 //        Query query = session.getNamedQuery("User.byName");
         SQLQuery query = session.createSQLQuery("select name, joindate, city from users natural join usersaddress");
-        List<Object[]>rows = query.list();
-        for(Object[] row: rows){
+        List<Object[]> rows = query.list();
+        for (Object[] row : rows) {
 
         }
         session.close();

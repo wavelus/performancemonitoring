@@ -5,26 +5,26 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity(name="users")
+@Entity(name = "users")
 @NamedNativeQuery(name = "User.byName", query = "select * from users where name = ?", resultClass = User.class)
-@org.hibernate.annotations.Entity(selectBeforeUpdate=true)
+@org.hibernate.annotations.Entity(selectBeforeUpdate = true)
 public class User {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(
+        name = "Attendance",
+        joinColumns = {@JoinColumn(name = "userid")},
+        inverseJoinColumns = {@JoinColumn(name = "eventid")}
+    )
+    Set<Event> events = new HashSet<>();
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long userId;
     private String name;
     private Date joinDate;
     @OneToOne
-    @JoinColumn(name="addressid")
+    @JoinColumn(name = "addressid")
     private UsersAddress usersAddress;
-
-    @ManyToMany(cascade = {CascadeType.ALL})
-    @JoinTable(
-            name = "Attendance",
-            joinColumns = {@JoinColumn(name = "userid")},
-            inverseJoinColumns = {@JoinColumn(name = "eventid")}
-    )
-    Set<Event> events = new HashSet<>();
 
     public Set<Event> getEvents() {
         return events;
@@ -67,8 +67,8 @@ public class User {
     }
 
     @Override
-    public String toString(){
-        return "Id= "+ userId + ", Name= " + name + ", {Address= " + usersAddress + "}";
+    public String toString() {
+        return "Id= " + userId + ", Name= " + name + ", {Address= " + usersAddress + "}";
     }
 
 }

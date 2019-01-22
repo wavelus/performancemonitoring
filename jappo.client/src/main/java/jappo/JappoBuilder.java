@@ -13,7 +13,8 @@ public class JappoBuilder {
         this.serverPort = serverPort;
         return this;
     }
-    public JappoBuilder configure(String src){
+
+    public JappoBuilder configure(String src) {
 
         return this;
     }

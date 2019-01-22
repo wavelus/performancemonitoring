@@ -1,24 +1,12 @@
 package main;
 
 import jappo.CollectorLog;
-import model.SingleLog;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.Metadata;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import servicedao.SingleLogService;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.util.Date;
-import java.util.List;
 import java.util.Scanner;
 
 public class JappoServerMain {
 
-    public static void main (String [] args) {
+    public static void main(String[] args) {
 //        SingleLogService singleLogService = new SingleLogService();
 //        SingleLog singleLog1 = new SingleLog("s1", System.nanoTime(), System.nanoTime(), "u1");
 //        SingleLog singleLog2 = new SingleLog("s2", System.nanoTime(), System.nanoTime(), "u1");

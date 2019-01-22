@@ -1,9 +1,6 @@
 package jappo;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
@@ -11,40 +8,40 @@ import java.util.concurrent.Executors;
 
 
 public class CollectorLog implements Runnable {
-    protected int          serverPort   = 8080;
+    protected int serverPort = 8080;
     protected ServerSocket serverSocket = null;
-    protected boolean      isStopped    = false;
-    protected Thread       runningThread= null;
+    protected boolean isStopped = false;
+    protected Thread runningThread = null;
     protected ExecutorService threadPool =
-            Executors.newFixedThreadPool(10);
+        Executors.newFixedThreadPool(10);
 
-    public CollectorLog(int port){
+    public CollectorLog(int port) {
         this.serverPort = port;
     }
 
-    public void run(){
-        synchronized(this){
+    public void run() {
+        synchronized (this) {
             this.runningThread = Thread.currentThread();
         }
         openServerSocket();
-        while(! isStopped()){
+        while (!isStopped()) {
             Socket clientSocket = null;
             try {
                 clientSocket = this.serverSocket.accept();
             } catch (IOException e) {
-                if(isStopped()) {
-                    System.out.println("Server Stopped.") ;
+                if (isStopped()) {
+                    System.out.println("Server Stopped.");
                     break;
                 }
                 throw new RuntimeException(
-                        "Error accepting client connection", e);
+                    "Error accepting client connection", e);
             }
             this.threadPool.execute(
-                    new WorkerRunnable(clientSocket,
-                            clientSocket.toString()));
+                new WorkerRunnable(clientSocket,
+                    clientSocket.toString()));
         }
         this.threadPool.shutdown();
-        System.out.println("Server Stopped.") ;
+        System.out.println("Server Stopped.");
     }
 
 
@@ -52,7 +49,7 @@ public class CollectorLog implements Runnable {
         return this.isStopped;
     }
 
-    public synchronized void stop(){
+    public synchronized void stop() {
         this.isStopped = true;
         try {
             this.serverSocket.close();

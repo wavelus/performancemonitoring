@@ -8,7 +8,8 @@ import java.util.Set;
 @Table(name = "Event")
 public class Event {
 
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long eventId;
     private String eventName;
 

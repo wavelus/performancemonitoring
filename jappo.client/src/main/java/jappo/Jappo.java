@@ -9,21 +9,21 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public class Jappo implements Runnable {
-    String serverAddress=null;
-    Integer serverPort =null;
+    String serverAddress = null;
+    Integer serverPort = null;
     ArrayList<SingleLog> logs = null;
 
-    public Jappo(String serverAddress, Integer serverPort){
+    public Jappo(String serverAddress, Integer serverPort) {
         this.serverAddress = serverAddress;
         this.serverPort = serverPort;
         this.logs = new ArrayList<SingleLog>();
     }
 
-    public void addLog(SingleLog log){
+    public void addLog(SingleLog log) {
         logs.add(log);
     }
 
-    public void sendLogs(){
+    public void sendLogs() {
         new Thread(this).start();
     }
 

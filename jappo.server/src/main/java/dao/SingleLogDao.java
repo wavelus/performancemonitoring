@@ -18,6 +18,16 @@ public class SingleLogDao implements SingleLogDaoInterface<SingleLog, Long> {
     public SingleLogDao() {
     }
 
+    private static SessionFactory getSessionFactory() {
+
+        Configuration configuration = new Configuration().configure("resources/hibernate.cfg.xml");
+        configuration.addAnnotatedClass(model.SingleLog.class);
+        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
+            .applySettings(configuration.getProperties());
+        SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
+        return sessionFactory;
+    }
+
     public Session openCurrentSession() {
         currentSession = getSessionFactory().openSession();
         return currentSession;
@@ -36,16 +46,6 @@ public class SingleLogDao implements SingleLogDaoInterface<SingleLog, Long> {
     public void closeCurrentSessionwithTransaction() {
         currentTransaction.commit();
         currentSession.close();
-    }
-
-    private static SessionFactory getSessionFactory() {
-
-        Configuration configuration = new Configuration().configure("resources/hibernate.cfg.xml");
-        configuration.addAnnotatedClass(model.SingleLog.class);
-        StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
-                .applySettings(configuration.getProperties());
-        SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
-        return sessionFactory;
     }
 
     public Session getCurrentSession() {
@@ -76,7 +76,7 @@ public class SingleLogDao implements SingleLogDaoInterface<SingleLog, Long> {
 
     @Override
     public SingleLog findById(Long id) {
-        SingleLog singleLog = (SingleLog) getCurrentSession().get(SingleLog.class,id);
+        SingleLog singleLog = (SingleLog) getCurrentSession().get(SingleLog.class, id);
         return singleLog;
     }
 
@@ -85,7 +85,8 @@ public class SingleLogDao implements SingleLogDaoInterface<SingleLog, Long> {
         getCurrentSession().delete(entity);
     }
 
-    @Override	@SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public List<SingleLog> findAll() {
         List<SingleLog> singleLogs = (List<SingleLog>) getCurrentSession().createQuery("from SINGLE_LOG ").list();
         return singleLogs;

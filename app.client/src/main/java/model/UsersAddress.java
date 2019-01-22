@@ -7,7 +7,9 @@ import javax.persistence.Id;
 
 @Entity
 public class UsersAddress {
-    @Id @GeneratedValue @Column(name = "addressid")
+    @Id
+    @GeneratedValue
+    @Column(name = "addressid")
     private Long addressId;
     private String city;
     private String street;
@@ -53,9 +55,10 @@ public class UsersAddress {
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
     }
+
     @Override
     public String toString() {
-        return "AddressLine1= " + street +" "+ streetNumber + ", City=" + city
-                + ", Zipcode=" + postalCode;
+        return "AddressLine1= " + street + " " + streetNumber + ", City=" + city
+            + ", Zipcode=" + postalCode;
     }
 }
