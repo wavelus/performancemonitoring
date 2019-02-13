@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity(name="users")
-@NamedNativeQuery(name = "User.byName", query = "select * from users where name = ?", resultClass = User.class)
+@NamedNativeQuery(name = "getAllUsers", query = "select * from users", resultClass = User.class)
 @org.hibernate.annotations.Entity(selectBeforeUpdate=true)
 public class User {
 
