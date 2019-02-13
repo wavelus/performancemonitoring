@@ -1,4 +1,4 @@
-package model;
+package jappo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

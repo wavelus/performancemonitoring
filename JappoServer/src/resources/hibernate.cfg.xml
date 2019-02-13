@@ -16,6 +16,6 @@
 
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="model.SingleLog"/>
+        <mapping class="jappo.model.SingleLog"/>
     </session-factory>
 </hibernate-configuration>

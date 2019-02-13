@@ -1,5 +1,9 @@
 package client;
 
+import jappo.Jappo;
+import jappo.JappoBuilder;
+import jappo.model.SingleLog;
+
 import java.io.IOException;
 
 public class Presenter {
@@ -24,7 +28,15 @@ public class Presenter {
 
 
     public void updateView(String databaseAnswer){
+        SingleLog updatingViewLog = new SingleLog();
+        updatingViewLog.setLabelOfTestedElement("Updating View");
+        updatingViewLog.setTimeOfExecution(System.nanoTime());
         view.jTextField.setText(databaseAnswer);
+        updatingViewLog.setTimeOfResult(System.nanoTime());
+
+        Jappo jappo = new JappoBuilder().setServerAddress("localhost").setServerPort(9898).createJappo();
+        jappo.addLog(updatingViewLog);
+        jappo.sendLogs();
     }
     public void updateNumberOfRecordsAction(){
         String result = "";

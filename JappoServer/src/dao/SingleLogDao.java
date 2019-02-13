@@ -1,6 +1,6 @@
 package dao;
 
-import model.SingleLog;
+import jappo.model.SingleLog;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -41,7 +41,7 @@ public class SingleLogDao implements SingleLogDaoInterface<SingleLog, Long> {
     private static SessionFactory getSessionFactory() {
 
         Configuration configuration = new Configuration().configure("resources/hibernate.cfg.xml");
-        configuration.addAnnotatedClass(model.SingleLog.class);
+        configuration.addAnnotatedClass(SingleLog.class);
         StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
                 .applySettings(configuration.getProperties());
         SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
@@ -76,7 +76,7 @@ public class SingleLogDao implements SingleLogDaoInterface<SingleLog, Long> {
 
     @Override
     public SingleLog findById(Long id) {
-        SingleLog singleLog = (SingleLog) getCurrentSession().get(SingleLog.class,id);
+        SingleLog singleLog = getCurrentSession().get(SingleLog.class, id);
         return singleLog;
     }
 

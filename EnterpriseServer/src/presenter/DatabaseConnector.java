@@ -1,5 +1,8 @@
 package presenter;
 
+import jappo.Jappo;
+import jappo.JappoBuilder;
+import jappo.model.SingleLog;
 import org.hibernate.SQLQuery;
 
 
@@ -9,14 +12,21 @@ public class DatabaseConnector {
     private DatabaseReference databaseReference = DatabaseReference.getInstance();
 
     public String getDataAsStringFromDatabase(String preparedQuery){
+        SingleLog databaseExecutionLog = new SingleLog("databaseExecutionLog");
         String result="";
         SQLQuery query = databaseReference.session.createSQLQuery(preparedQuery);
         List<Object> list = query.list();
         for (Object row: list) {
             result+=row.toString()+"\n";
         }
+        databaseExecutionLog.setTimeOfExecution((long) 0);
         Long executionTime = getTimeExecution(preparedQuery);
-        System.out.println(executionTime);
+        databaseExecutionLog.setTimeOfResult(executionTime);
+
+        Jappo jappo = new JappoBuilder().setServerAddress("localhost").setServerPort(9898).createJappo();
+        jappo.addLog(databaseExecutionLog);
+        jappo.sendLogs();
+//        System.out.println(executionTime);
         return result;
     }
 

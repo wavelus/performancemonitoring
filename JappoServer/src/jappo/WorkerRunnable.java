@@ -1,6 +1,6 @@
 package jappo;
 
-import model.SingleLog;
+import jappo.model.SingleLog;
 
 import java.io.IOException;
 import java.io.InputStream;

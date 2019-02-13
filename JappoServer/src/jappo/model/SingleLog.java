@@ -1,4 +1,4 @@
-package model;
+package jappo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,10 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-@Entity(name="SINGLE_LOG")
+@Entity(name = "SINGLE_LOG")
 public class SingleLog implements Serializable {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long logId;
 
     private String labelOfTestedElement;
@@ -17,26 +18,39 @@ public class SingleLog implements Serializable {
     private Long timeOfResult;
     private String uniqueProgramExecutionId;
 
-    public SingleLog(){}
+    public SingleLog() {
+    }
 
-    public SingleLog(String label){
+    public SingleLog(String label) {
         this.labelOfTestedElement = label;
     }
-    public SingleLog(String label, Long timeOfExecution, Long timeOfResult){
+
+    public SingleLog(String label, Long timeOfExecution, Long timeOfResult) {
         this.labelOfTestedElement = label;
         this.timeOfExecution = timeOfExecution;
         this.timeOfResult = timeOfResult;
     }
 
-    @Override
-    public String toString() {
-        return (labelOfTestedElement + " "+timeOfExecution+" "+timeOfResult);
+    public SingleLog(String labelOfTestedElement, Long timeOfExecution, Long timeOfResult, String uniqueProgramExecutionId) {
+        this.labelOfTestedElement = labelOfTestedElement;
+        this.timeOfExecution = timeOfExecution;
+        this.timeOfResult = timeOfResult;
+        this.uniqueProgramExecutionId = uniqueProgramExecutionId;
     }
 
-    public String getUniqueProgramExecutionId() {return uniqueProgramExecutionId;    }
+
+    @Override
+    public String toString() {
+        return (labelOfTestedElement + " " + timeOfExecution + " " + timeOfResult);
+    }
+
+    public String getUniqueProgramExecutionId() {
+        return uniqueProgramExecutionId;
+    }
 
     public void setUniqueProgramExecutionId(String uniqueProgramExecutionId) {
-        this.uniqueProgramExecutionId = uniqueProgramExecutionId;}
+        this.uniqueProgramExecutionId = uniqueProgramExecutionId;
+    }
 
     public Long getLogId() {
         return logId;

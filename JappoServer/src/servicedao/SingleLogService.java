@@ -1,7 +1,7 @@
 package servicedao;
 
 import dao.SingleLogDao;
-import model.SingleLog;
+import jappo.model.SingleLog;
 
 import java.util.List;
 
