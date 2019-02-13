@@ -24,8 +24,6 @@ public class WorkerRunnable implements Runnable{
             ArrayList<SingleLog> logs = new ArrayList<SingleLog>();
             logs = (ArrayList<SingleLog>)objectInputStream.readObject();
 
-//            System.out.println(logs.toString());
-
             ExporterLog exporterLog= new ExporterLog(logs);
             new Thread(exporterLog).run();
 

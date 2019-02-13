@@ -26,7 +26,6 @@ public class DatabaseConnector {
         Jappo jappo = new JappoBuilder().setServerAddress("localhost").setServerPort(9898).createJappo();
         jappo.addLog(databaseExecutionLog);
         jappo.sendLogs();
-//        System.out.println(executionTime);
         return result;
     }
 

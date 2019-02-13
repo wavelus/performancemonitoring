@@ -2,24 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc33aa78-edd8-4754-93d4-6c0699291d9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/src/jappo/Jappo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnterpriseServer/src/jappo/JappoBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JappoServer/src/jappo/model/SingleLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/JappoClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/JappoClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/JappoClientMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jappo/Jappo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jappo/Jappo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SingleLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EnterpriseServer/src/jappo/model/SingleLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EnterpriseServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EnterpriseServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnterpriseServer/src/jappo/Jappo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EnterpriseServer/src/jappo/Jappo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnterpriseServer/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EnterpriseServer/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EnterpriseServer/src/presenter/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EnterpriseServer/src/presenter/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnterpriseServer/src/presenter/DatabaseReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EnterpriseServer/src/presenter/DatabaseReference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JappoServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JappoServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JappoServer/out/production/LogService/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JappoServer/out/production/LogService/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JappoServer/src/dao/SingleLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JappoServer/src/dao/SingleLogDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JappoServer/src/jappo/ExporterLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JappoServer/src/jappo/ExporterLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JappoServer/src/jappo/WorkerRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JappoServer/src/jappo/WorkerRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JappoServer/src/model/SingleLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jappo/model/SingleLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JappoServer/src/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JappoServer/src/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JappoServer/src/servicedao/SingleLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JappoServer/src/servicedao/SingleLogService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,54 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/client/Presenter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#177#178#0" expanded="true" />
-                    <element signature="e#209#210#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/jappo/Jappo.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" selection-start-line="11" selection-end-line="13" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/client/JappoClientMain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,24 +42,24 @@
         <option value="$PROJECT_DIR$/src/sender/Sender.java" />
         <option value="$PROJECT_DIR$/src/sender/SenderRunnable.java" />
         <option value="$PROJECT_DIR$/src/client/ClientCap.java" />
-        <option value="$PROJECT_DIR$/src/jappo/Jappo.java" />
         <option value="$PROJECT_DIR$/src/jappo/JappoBuilder.java" />
         <option value="$PROJECT_DIR$/src/client/MyString.java" />
         <option value="$PROJECT_DIR$/src/client/StringOne.java" />
         <option value="$PROJECT_DIR$/src/client/StringTwo.java" />
         <option value="$PROJECT_DIR$/src/client/Main.java" />
         <option value="$PROJECT_DIR$/src/client/DatabaseConnector.java" />
-        <option value="$PROJECT_DIR$/src/client/View.java" />
         <option value="$PROJECT_DIR$/src/model/SingleLog.java" />
         <option value="$PROJECT_DIR$/src/client/JappoClientMain.java" />
         <option value="$PROJECT_DIR$/src/client/Presenter.java" />
+        <option value="$PROJECT_DIR$/src/client/View.java" />
+        <option value="$PROJECT_DIR$/src/jappo/Jappo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2569" />
-    <option name="y" value="-139" />
-    <option name="width" value="2578" />
+    <option name="x" value="-2570" />
+    <option name="y" value="-140" />
+    <option name="width" value="2580" />
     <option name="height" value="1420" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -122,7 +68,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,18 +92,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jappo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jappo" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550082960107" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550083332718" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EnterpriseServer" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -236,18 +189,19 @@
       <workItem from="1549984170523" duration="4373000" />
       <workItem from="1549992842389" duration="5915000" />
       <workItem from="1550057440294" duration="1863000" />
-      <workItem from="1550060097226" duration="10515000" />
+      <workItem from="1550060097226" duration="11003000" />
+      <workItem from="1550084577478" duration="254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44224000" />
+    <option name="totallyTimeSpent" value="44966000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2567" y="-137" width="2062" height="1136" extended-state="7" />
+    <frame x="-2567" y="-137" width="2062" height="1136" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28121877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28421578" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -257,7 +211,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.122509964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.41733068" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,18 +256,6 @@
     <entry file="file://$PROJECT_DIR$/../../performancemonitoring-Rafa-/StringOne.java" />
     <entry file="file://$PROJECT_DIR$/../../performancemonitoring-Rafa-/Presenter.java" />
     <entry file="file://$PROJECT_DIR$/src/client/StringOne.java" />
-    <entry file="file://$PROJECT_DIR$/src/client/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/AppServerConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -324,6 +266,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/JappoClientMain.java" />
     <entry file="file://$PROJECT_DIR$/src/client/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -331,20 +274,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/JappoClientMain.java">
+    <entry file="file://$PROJECT_DIR$/src/client/Presenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="629">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jappo/Jappo.java">
+    <entry file="file://$PROJECT_DIR$/src/client/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="11" selection-end-line="13" />
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jappo/model/SingleLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -358,26 +313,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jappo/model/SingleLog.java">
+    <entry file="file://$PROJECT_DIR$/src/jappo/Jappo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="316">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/Presenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
           </folding>
         </state>
       </provider>

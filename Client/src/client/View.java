@@ -23,10 +23,8 @@ public class View{
 
         buttonOne = new JButton("Podaj liczbę wpisów");
         buttonOne.addActionListener((ActionEvent e) -> {
-            //jappo, wysłanie żadania
             startTime = System.nanoTime();
             presenter.action("String One");
-            //jappo, otrzymanie odpowiedzi
             stopTime = System.nanoTime();
         });
 

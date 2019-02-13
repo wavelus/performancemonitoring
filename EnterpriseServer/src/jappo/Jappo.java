@@ -33,7 +33,6 @@ public class Jappo implements Runnable {
             Socket socket = new Socket(serverAddress, serverPort);
             OutputStream outputStream = socket.getOutputStream();
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
-//            SingleLog singleLog = new SingleLog("sdaf", new Date(), new Date());
             objectOutputStream.writeObject(logs);
             socket.close();
         } catch (IOException e) {
